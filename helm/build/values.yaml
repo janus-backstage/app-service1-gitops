@@ -1,0 +1,21 @@
+app:
+  name: app-service1
+  namespace: app-service1-dev
+  cluster: .apps.ocp4.quitala.eu
+
+git:
+  branch: main
+  repo: https://github.com/janus-backstage/app-service1.git
+  org: janus-backstage
+  name: app-service1
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: Quay
+  organization: janus-backstage
+  host: quay.io
+  name: app-service1
+  tag: latest
